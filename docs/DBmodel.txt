@@ -3,19 +3,19 @@ Event
 id int PK
 title varchar(200)
 date timestamp
-type varchar(30)
-url varchar(200)
-description varchar(1000)
-discipline/theme string
-relevant bool
-favorite bool
-tags Array<string>
-added_at timestamp
+url varchar(200) UNIQUE
+source varchar(30)
+organizer? varchar(30)=source
+unread bool=true
+relevant string="(true, false, ???)"
+favorite bool=false
+added_on timestamp
+description varchar(1000)=""
 
 Tag
 -
 id int PK
-name varchar(30)
+name varchar(30) UNIQUE
 
 tag_event
 -
