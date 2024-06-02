@@ -1,0 +1,24 @@
+Event
+-
+id int PK
+title varchar(200)
+date timestamp
+type varchar(30)
+url varchar(200)
+description varchar(1000)
+discipline/theme string
+relevant bool
+favorite bool
+tags Array<string>
+added_at timestamp
+
+Tag
+-
+id int PK
+name varchar(30)
+
+tag_event
+-
+id int PK
+tag_id int FK >- Tag.id
+event_id int FK >- Event.id
