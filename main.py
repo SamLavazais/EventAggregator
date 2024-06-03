@@ -1,16 +1,24 @@
-# This is a sample Python script.
-
-# Press Maj+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+from scraping_HAS import scrape_has
+import pandas as pd
+from sqlalchemy import create_engine, URL
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    print_hi('PyCharm')
+    data_has = scrape_has()
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+    data = data_has + []
+
+    df = pd.DataFrame(data_has, columns=['id', 'Title', 'Date', 'Url'])
+    df.to_json(path_or_buf="./data_HAS.json",
+               orient="records")
+
+
+# url_object = URL.create(
+#     "mysql+pymysql",
+#     "root",
+#     password="j2d8m2s3!",
+#     host="http://127.0.0.1:3306",
+#     database="sys"
+# )
+# engine = create_engine(url_object)
+# df.to_sql(name='people', con=engine, schema="eventsscraping", if_exists="append")
