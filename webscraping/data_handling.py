@@ -4,22 +4,20 @@ import json
 from webscraping.scraping import scrape_has
 
 
-def web_scrape():
+def scrape_data():
     data_scraped = []
     data_scraped += scrape_has()
     return data_scraped
 
 
-def save_to_json():
-    data_to_store = web_scrape()
-
+def save_to_json(data_to_store, app_root_path):
     df = pd.DataFrame(data_to_store, columns=['id', 'Title', 'Date', 'Url'])
-    df.to_json(path_or_buf="./data.json",
+    df.to_json(path_or_buf=f"{app_root_path}/data.json",
                orient="records")
 
 
 def read_from_json(app_root_path):
-    f = open(f"{app_root_path}\\webscraping\\data.json")
+    f = open(f"{app_root_path}\\data.json")
     data_read = json.load(f)
     f.close()
     return data_read
