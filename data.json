@@ -1,1 +1,38 @@
-[{"id":1,"Title":"Colloque HAS \u00ab Sant\u00e9, l'innovation au service des personnes \u00bb  Paris - 21 novembre 2024","Date":"Le 21\/11\/2024","Url":"https:\/\/www.has-sante.fr\/jcms\/p_3517592\/fr\/colloque-has-sante-l-innovation-au-service-des-personnes-paris-21-novembre-2024"},{"id":2,"Title":"Webinaire\u202fHAS \u2013 Diab\u00e8te de type 2 de l\u2019adulte : quelles strat\u00e9gies th\u00e9rapeutiques\u202f ?","Date":"Le 27\/06\/2024","Url":"https:\/\/www.has-sante.fr\/jcms\/p_3520038\/fr\/webinairehas-diabete-de-type-2-de-l-adulte-quelles-strategies-therapeutiques"},{"id":3,"Title":"La HAS au colloque international organis\u00e9 par l'AIS : \u00ab Next generation of clinical research \u2013 AI, in silico and external arm: time to make it real \u00bb - 24 juin ...","Date":"Le 24\/06\/2024","Url":"https:\/\/www.has-sante.fr\/jcms\/p_3520775\/fr\/la-has-au-colloque-international-organise-par-l-ais-next-generation-of-clinical-research-ai-in-silico-and-external-arm-time-to-make-it-real-24-juin-2024"},{"id":4,"Title":"La HAS sera pr\u00e9sente \u00e0 la journ\u00e9e annuelle de l\u2019exp\u00e9rience patient - mardi 18 juin 2024","Date":"Le 18\/06\/2024","Url":"https:\/\/www.has-sante.fr\/jcms\/p_3517451\/fr\/la-has-sera-presente-a-la-journee-annuelle-de-l-experience-patient-mardi-18-juin-2024"},{"id":5,"Title":"La HAS \u00e0 la journ\u00e9e annuelle de l'ANRQ-PSY - 14 juin 2024","Date":"Le 14\/06\/2024","Url":"https:\/\/www.has-sante.fr\/jcms\/p_3522113\/fr\/la-has-a-la-journee-annuelle-de-l-anrq-psy-14-juin-2024"},{"id":6,"Title":"Enqu\u00eate sur votre connaissance de \u00ab PACTE Soins Primaires \u00bb (PACTE SP)","Date":"Du 13\/06\/2024\r\n\t\t\t\t\t\t\t\t\t\t\t             au 31\/07\/2024","Url":"https:\/\/www.has-sante.fr\/jcms\/p_3522096\/fr\/enquete-sur-votre-connaissance-de-pacte-soins-primaires-pacte-sp"}]
+[
+  {
+    "id": 4,
+    "title": "La HAS sera pr\u00e9sente \u00e0 la journ\u00e9e annuelle de l\u2019exp\u00e9rience patient - mardi 18 juin 2024",
+    "date": "Le 18\/06\/2024",
+    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3517451\/fr\/la-has-sera-presente-a-la-journee-annuelle-de-l-experience-patient-mardi-18-juin-2024"
+  },
+  {
+    "id": 5,
+    "title": "La HAS \u00e0 la journ\u00e9e annuelle de l'ANRQ-PSY - 14 juin 2024",
+    "date": "Le 14\/06\/2024",
+    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3522113\/fr\/la-has-a-la-journee-annuelle-de-l-anrq-psy-14-juin-2024"
+  },
+  {
+    "id": 6,
+    "title": "Enqu\u00eate sur votre connaissance de \u00ab PACTE Soins Primaires \u00bb (PACTE SP)",
+    "date": "Du 13\/06\/2024\r\n\t\t\t\t\t\t\t\t\t\t\t             au 31\/07\/2024",
+    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3522096\/fr\/enquete-sur-votre-connaissance-de-pacte-soins-primaires-pacte-sp"
+  },
+  {
+    "id": 9,
+    "title": "La HAS au colloque international organis\u00e9 par l'AIS : \u00ab Next generation of clinical research \u2013 AI, in silico and external arm: time to make it real \u00bb - 24 juin ...",
+    "date": "Le 24\/06\/2024",
+    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3520775\/fr\/la-has-au-colloque-international-organise-par-l-ais-next-generation-of-clinical-research-ai-in-silico-and-external-arm-time-to-make-it-real-24-juin-2024"
+  },
+  {
+    "id": 10,
+    "title": "Colloque HAS \u00ab Sant\u00e9, l'innovation au service des personnes \u00bb  Paris - 21 novembre 2024",
+    "date": "Le 21\/11\/2024",
+    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3517592\/fr\/colloque-has-sante-l-innovation-au-service-des-personnes-paris-21-novembre-2024"
+  },
+  {
+    "id": 11,
+    "title": "Webinaire\u202fHAS \u2013 Diab\u00e8te de type 2 de l\u2019adulte : quelles strat\u00e9gies th\u00e9rapeutiques\u202f ?",
+    "date": "Le 27\/06\/2024",
+    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3520038\/fr\/webinairehas-diabete-de-type-2-de-l-adulte-quelles-strategies-therapeutiques"
+  }
+]

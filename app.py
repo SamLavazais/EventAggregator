@@ -9,7 +9,7 @@ scheduler.init_app(app)
 scheduler.start()
 
 
-@scheduler.task('interval', id='update_db', seconds=20)
+@scheduler.task('interval', id='update_db', seconds=10000)
 def update_database():
     data_to_store = scrape_data()
     save_to_json(data_to_store, app.root_path)
@@ -18,8 +18,12 @@ def update_database():
 
 @app.route('/coucou')
 def hello_world():  # put application's code here
-    return app.root_path
+    return scrape_data()
 
+@app.route('/manual_update')
+def update():  # put application's code here
+    update_database()
+    return "données mises à jour"
 
 @app.route('/events')
 def get_all_events():  # put application's code here
