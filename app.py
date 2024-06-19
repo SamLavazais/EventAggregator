@@ -1,13 +1,18 @@
-from flask import Flask, make_response
+from flask import Flask
 
-from webscraping.scraping_HAS import scrape_has
+from webscraping.data_handling import read_from_json
 
 app = Flask(__name__)
 
 
-@app.route('/events')
+@app.route('/coucou')
 def hello_world():  # put application's code here
-    return scrape_has()
+    return app.root_path
+
+
+@app.route('/events')
+def get_all_events():  # put application's code here
+    return read_from_json(app.root_path)
 
 
 if __name__ == '__main__':

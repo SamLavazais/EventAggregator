@@ -20,6 +20,6 @@ def scrape_has():
         title = event.find("a").get_text().strip()
         date = event.find("div", class_="date date-event").get_text().strip()
         event_url = "https://www.has-sante.fr/" + event.find("a")["href"]
-        data.append(dict(id=i, title=title, date=date, url=event_url))
+        data.append([i, title, date, event_url])
 
     return data
