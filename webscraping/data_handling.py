@@ -3,8 +3,10 @@ import json
 import copy
 
 from webscraping.scraping import scrape_has
+from webscraping.timer import Timer
 
 
+@Timer(text="Data (events) were scraped in : {:.2f} seconds.")
 def scrape_data():
     data_scraped = []
     data_scraped += scrape_has()
@@ -22,7 +24,6 @@ def save_new_records_only(data_to_store, current_data):
                 "date": record["date"]
             })
     return new_data
-
 
 def save_to_json(data_to_store, app_root_path):
     # lire le fichier json
