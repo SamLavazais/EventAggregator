@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import copy
 
-from webscraping.scraping import scrape_has, scrape_firah
+from webscraping.scraping import scrape_has, scrape_firah, scrape_cnsa
 from webscraping.timer import Timer
 
 
@@ -11,6 +11,7 @@ def scrape_data():
     data_scraped = []
     data_scraped += scrape_has()
     data_scraped += scrape_firah()
+    data_scraped += scrape_cnsa()
     return data_scraped
 
 

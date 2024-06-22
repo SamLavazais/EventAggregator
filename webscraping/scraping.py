@@ -36,10 +36,8 @@ def scrape_firah():
     section = soup.find("div", class_="pages_articles")
     events = section.find_all(
         "article",
-        # class_="article"
     )
 
-    # convertir les éléments obtenus en data
     data = []
     for event in events:
         title = event.find("a").get_text().strip()
@@ -54,6 +52,32 @@ def scrape_firah():
 
     return data
 
+
+def scrape_cnsa():
+    url = "https://www.cnsa.fr/agenda"
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+    section = soup.find("div", class_="events-list")
+    events = section.find_all(
+        "section",
+        class_="h-event frame discrete"
+    )
+
+    data = []
+    for event in events:
+        title = event.find("h2").find("a").get_text().strip()
+        date = event.find("time", class_="dt-start").get_text().strip()
+        event_url = "https://www.cnsa.fr" + event.find("h2").find("a")["href"]
+        data.append({
+            "title": title,
+            "date": date,
+            "url": event_url,
+            "source": "CNSA"
+        })
+
+    return data
+
+
 # METHODE pour chaque website :
     # définir l'URL
     # récupérer la page
@@ -61,3 +85,4 @@ def scrape_firah():
     # identifier la section qui contient les events
     # obtenir la liste des events
     # (filtrer les events si nécessaire)
+    # convertir les éléments obtenus en data
