@@ -2,6 +2,7 @@ import logging
 from flask import Flask
 from flask_apscheduler import APScheduler
 from webscraping.data_handling import read_from_json, save_to_json, scrape_data
+from webscraping.scraping import scrape_firah
 from webscraping.timer import Timer
 
 app = Flask(__name__)
@@ -24,18 +25,20 @@ scheduler.start()
 )
 def update_database():
     data_to_store = scrape_data()
+    print("data to store après scraping : ")
+    print(data_to_store[0])
     save_to_json(data_to_store, app.root_path)
+    app.logger.info('data successfully updated.')
 
 
 @app.route('/testscraping')
-def hello_world():  # put application's code here
+def test_scraping():  # put application's code here
     return scrape_data()
 
 
 @app.route('/manual_update')
 def update():  # put application's code here
     update_database()
-    app.logger.warning('data updated successfully at midnight !')
     return "données mises à jour"
 
 

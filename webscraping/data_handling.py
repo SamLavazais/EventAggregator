@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import copy
 
-from webscraping.scraping import scrape_has
+from webscraping.scraping import scrape_has, scrape_firah
 from webscraping.timer import Timer
 
 
@@ -10,20 +10,25 @@ from webscraping.timer import Timer
 def scrape_data():
     data_scraped = []
     data_scraped += scrape_has()
+    data_scraped += scrape_firah()
     return data_scraped
 
 
 def save_new_records_only(data_to_store, current_data):
     new_data = copy.deepcopy(current_data)
+    print("data to store avant update : ")
+    print(data_to_store[0])
     for record in data_to_store:
         if record["url"] not in [r["url"] for r in current_data]:
-            new_data.append({
-                "id": new_data[-1]["id"] + 1,
-                "title": record["title"],
-                "url": record["url"],
-                "date": record["date"]
-            })
+            print("record qui va être sauvegardé : ")
+            print(record)
+            record["id"] = new_data[-1]["id"] + 1
+            new_data.append(record)
+    print("new data après update : ")
+    print(new_data)
+
     return new_data
+
 
 def save_to_json(data_to_store, app_root_path):
     # lire le fichier json
@@ -34,7 +39,7 @@ def save_to_json(data_to_store, app_root_path):
     new_data = save_new_records_only(data_to_store, current_data)
 
     # sauvegarder à nouveau le fichier json
-    df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url'])
+    df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source'])
     df.to_json(path_or_buf=f"{app_root_path}/data.json",
                orient="records")
 
