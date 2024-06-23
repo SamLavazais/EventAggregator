@@ -12,6 +12,11 @@ def scrape_data():
     data_scraped += scrape_has()
     data_scraped += scrape_firah()
     data_scraped += scrape_cnsa()
+
+    # implémentation manuelle de l'id (pré-ORM)
+    for i, record in enumerate(data_scraped):
+        record["id"] = i
+
     return data_scraped
 
 
@@ -34,10 +39,12 @@ def save_new_records_only(data_to_store, current_data):
 def save_to_json(data_to_store, app_root_path):
     # lire le fichier json
     current_data = read_from_json(app_root_path)
-
-    # checker le fichier json pour chaque élément des data récupérées
-    # et si la data est new, l'ajouter aux data
-    new_data = save_new_records_only(data_to_store, current_data)
+    if current_data:
+        # checker le fichier json pour chaque élément des data récupérées
+        # et si la data est new, l'ajouter aux data
+        new_data = save_new_records_only(data_to_store, current_data)
+    else:
+        new_data = data_to_store
 
     # sauvegarder à nouveau le fichier json
     df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source'])

@@ -1,11 +1,13 @@
 import logging
 from flask import Flask
 from flask_apscheduler import APScheduler
+from flask_cors import CORS
 from webscraping.data_handling import read_from_json, save_to_json, scrape_data
 from webscraping.scraping import scrape_cnsa
 from webscraping.timer import Timer
 
 app = Flask(__name__)
+CORS(app)
 
 logging.basicConfig(
     filename=f'{app.root_path}/log/record.log',
@@ -26,7 +28,7 @@ scheduler.start()
 def update_database():
     data_to_store = scrape_data()
     print("data to store après scraping : ")
-    print(data_to_store[0])
+    print(data_to_store[0:3])
     save_to_json(data_to_store, app.root_path)
     app.logger.info('data successfully updated.')
 
