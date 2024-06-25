@@ -1,5 +1,9 @@
+import datetime
+import json
 import logging
-from flask import Flask
+
+import pandas as pd
+from flask import Flask, request
 from flask_apscheduler import APScheduler
 from flask_cors import CORS
 from webscraping.data_handling import read_from_json, save_to_json, scrape_data
@@ -30,23 +34,99 @@ def update_database():
     print("data to store après scraping : ")
     print(data_to_store[0:3])
     save_to_json(data_to_store, app.root_path)
-    app.logger.info('data successfully updated.')
+    # app.logger.info('data successfully updated.')
 
 
-@app.route('/test_scraping')
+@app.route("/", methods=['GET', 'POST'])
 def test_scraping():  # put application's code here
-    return scrape_cnsa()
+    if request.method == 'POST':
+        return scrape_cnsa()
 
 
-@app.route('/manual_update')
+@app.route('/manual_update', methods=['POST'])
 def update():  # put application's code here
     update_database()
     return "données mises à jour"
 
 
-@app.route('/events')
+@app.get('/events')
 def get_all_events():  # put application's code here
-    return read_from_json(app.root_path)
+    data = read_from_json(app.root_path)
+    if request.args.get("deleted", default=False):
+        return [record for record in data if record['deleted_at'] is not None]
+    else:
+        return [record for record in data if record['deleted_at'] is None]
+
+
+@app.post('/events')
+def post_event():
+    data = request.form
+    new_record = {
+        'title': data['title'],
+        'date': data['date'],
+        'url': data['url'],
+        'source': data['source'],
+        'unread': True,
+        'deleted_at': None
+    }
+    current_data = read_from_json(app.root_path)
+    new_record["id"] = current_data[-1]["id"] + 1
+    new_data = current_data.append(new_record)
+    df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
+    df.to_json(path_or_buf=f"{app.root_path}/data.json",
+               orient="records")
+    return new_record
+
+
+
+@app.get('/events/<event_id>')
+def get_one_event(event_id):
+    # récupérer l'event concerné
+    events = read_from_json(app.root_path)
+
+    for event in events:
+        if event['id'] == int(event_id):
+            return event
+
+
+@app.put('/events/<event_id>')
+def edit_event(event_id):
+    data = request.form
+    events = read_from_json(app.root_path)
+    for event in events:
+        if event['id'] == int(event_id):
+            event['title'] = data['title']
+            event['date'] = data['date']
+            event['url'] = data['url']
+            event['source'] = data['source']
+            event['unread'] = data['unread']
+            # sauvegarder les données
+            df = pd.DataFrame(events, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
+            df.to_json(path_or_buf=f"{app.root_path}/data.json",
+                       orient="records")
+
+            return event
+    return "coucou"
+
+
+@app.delete('/events/<event_id>')
+def delete_event(event_id):
+    # récupérer l'event concerné
+    events = read_from_json(app.root_path)
+    # updater la date de suppression
+    for event in events:
+        if event['id'] == int(event_id):
+            # delete l'event s'il ne l'est pas déjà OU restaure l'event s'il avait été deleted
+            if event['deleted_at']:
+                event['deleted_at'] = None
+            else:
+                event['deleted_at'] = datetime.datetime.now().isoformat()
+            # sauvegarder les données
+            df = pd.DataFrame(events, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
+            df.to_json(path_or_buf=f"{app.root_path}/data.json",
+                       orient="records")
+
+            return event
 
 
 if __name__ == '__main__':

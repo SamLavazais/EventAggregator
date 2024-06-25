@@ -14,16 +14,17 @@ def scrape_data():
     data_scraped += scrape_cnsa()
 
     # implémentation manuelle de l'id (pré-ORM)
-    for i, record in enumerate(data_scraped):
-        record["id"] = i
-
+    for i, record in enumerate(data_scraped, start=1):
+        record['deleted_at'] = None
+        record['unread'] = True
+        record['id'] = i
     return data_scraped
 
 
 def save_new_records_only(data_to_store, current_data):
     new_data = copy.deepcopy(current_data)
-    print("data to store avant update : ")
-    print(data_to_store[0])
+    # print("data to store avant update : ")
+    # print(data_to_store[0])
     for record in data_to_store:
         if record["url"] not in [r["url"] for r in current_data]:
             print("record qui va être sauvegardé : ")
@@ -47,7 +48,7 @@ def save_to_json(data_to_store, app_root_path):
         new_data = data_to_store
 
     # sauvegarder à nouveau le fichier json
-    df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source'])
+    df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
     df.to_json(path_or_buf=f"{app_root_path}/data.json",
                orient="records")
 
@@ -59,10 +60,10 @@ def read_from_json(app_root_path):
     return data_read
 
 
-if __name__ == '__main__':
-    save_to_json()
-    data = read_from_json()
-    print(data)
+# if __name__ == '__main__':
+#     save_to_json()
+#     data = read_from_json()
+#     print(data)
 
 # from sqlalchemy import create_engine, URL
 # url_object = URL.create(
