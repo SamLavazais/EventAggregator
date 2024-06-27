@@ -6,6 +6,7 @@ from flask import Flask, request
 from flask_apscheduler import APScheduler
 from flask_cors import CORS
 from webscraping.data_handling import read_from_json, save_to_json, scrape_data
+from webscraping.date_parser import dateparser_user
 from webscraping.scraping import scrape_filnemus
 from webscraping.timer import Timer
 
@@ -95,7 +96,9 @@ def edit_event(event_id):
     for event in events:
         if event['id'] == int(event_id):
             for key in request_data.keys():
-                event[key] = request_data[key] if request_data[key] else False
+                new_data = dateparser_user(request_data[key]) if key == "date" else request_data[key]
+                new_data = "{d}/{m}/{y}".format(d=new_data.day, m=new_data.month, y=new_data.year)
+                event[key] = new_data if request_data[key] else False
             # sauvegarder les données
             df = pd.DataFrame(events, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
             df.to_json(path_or_buf=f"{app.root_path}/data.json",

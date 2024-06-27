@@ -1,6 +1,8 @@
 import requests
 from bs4 import BeautifulSoup
 
+from webscraping.date_parser import date_parser
+
 
 def scrape_has():
     url = "https://www.has-sante.fr/jcms/fc_2874902/fr/actualites"
@@ -17,11 +19,11 @@ def scrape_has():
     data = []
     for event in filtered_events:
         title = event.find("a").get_text().strip()
-        date = event.find("div", class_="date date-event").get_text().strip()
+        date = date_parser(event.find("div", class_="date date-event").get_text().strip(), "HAS")
         event_url = "https://www.has-sante.fr/" + event.find("a")["href"]
         data.append({
             "title": title,
-            "date": date,
+            "date": "{d}/{m}/{y}".format(d=date.day, m=date.month, y=date.year),
             "url": event_url,
             "source": "HAS"
         })
@@ -66,11 +68,11 @@ def scrape_cnsa():
     data = []
     for event in events:
         title = event.find("h2").find("a").get_text().strip()
-        date = event.find("time", class_="dt-start").get_text().strip()
+        date = date_parser(event.find("time", class_="dt-start").get_text().strip(), "CNSA")
         event_url = "https://www.cnsa.fr" + event.find("h2").find("a")["href"]
         data.append({
             "title": title,
-            "date": date,
+            "date": "{d}/{m}/{y}".format(d=date.day, m=date.month, y=date.year),
             "url": event_url,
             "source": "CNSA"
         })
@@ -112,11 +114,11 @@ def scrape_filnemus():
         # convertir les éléments obtenus en data
         for event in events:
             title = event.find("h5").get_text().strip()
-            date = event.find("div", class_="date-wrapper").get_text().strip()
+            date = date_parser(event.find("div", class_="date-wrapper").get_text().strip(), "Filnemus")
             event_url = "https://www.filnemus.fr" + event.find("a")["href"]
             data.append({
                 "title": title,
-                "date": date,
+                "date": "{d}/{m}/{y}".format(d=date.day, m=date.month, y=date.year),
                 "url": event_url,
                 "source": "Filnemus"
             })
