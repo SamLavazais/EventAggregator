@@ -78,11 +78,56 @@ def scrape_cnsa():
     return data
 
 
-# METHODE pour chaque website :
+def scrape_filnemus():
     # définir l'URL
+    url = "https://www.filnemus.fr/les-evenements-filnemus/agenda/page"
     # récupérer la page
+    page = requests.get(url)
     # isoler le contenu de la page
-    # identifier la section qui contient les events
-    # obtenir la liste des events
-    # (filtrer les events si nécessaire)
-    # convertir les éléments obtenus en data
+    soup = BeautifulSoup(page.content, "html.parser")
+
+    # pagination => récupérer le nombre des pages
+    pagination_text = soup \
+        .find("div", class_="page-navigation rounded-box white-bg clearfix mb-4") \
+        .find("p") \
+        .get_text()
+    page_count = int(pagination_text.strip()[-1])
+
+    data = []
+    # boucler sur la liste des pages => pour chaque page :
+    for i in range(1, page_count + 1):
+        page_url = url + "-" + str(i)
+        # récupérer la page
+        page = requests.get(page_url)
+        # isoler le contenu de la page
+        soup = BeautifulSoup(page.content, "html.parser")
+        # récupérer la section qui contient les events
+        section = soup.find("div", class_="row mt-3 mb-5")
+        # obtenir les events sous forme de liste
+        events = section.find_all(
+            "div",
+            class_="col-12 col-lg-6 mb-4"
+        )
+
+        # convertir les éléments obtenus en data
+        for event in events:
+            title = event.find("h5").get_text().strip()
+            date = event.find("div", class_="date-wrapper").get_text().strip()
+            event_url = "https://www.filnemus.fr" + event.find("a")["href"]
+            data.append({
+                "title": title,
+                "date": date,
+                "url": event_url,
+                "source": "Filnemus"
+            })
+
+    return data
+
+# METHODE pour chaque website :
+# définir l'URL
+# récupérer la page
+# isoler le contenu de la page
+# identifier la section qui contient les events
+# obtenir la liste des events
+# (filtrer les events si nécessaire)
+# convertir les éléments obtenus en data

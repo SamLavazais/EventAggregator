@@ -6,7 +6,7 @@ from flask import Flask, request
 from flask_apscheduler import APScheduler
 from flask_cors import CORS
 from webscraping.data_handling import read_from_json, save_to_json, scrape_data
-from webscraping.scraping import scrape_cnsa
+from webscraping.scraping import scrape_filnemus
 from webscraping.timer import Timer
 
 app = Flask(__name__)
@@ -36,10 +36,9 @@ def update_database():
     # app.logger.info('data successfully updated.')
 
 
-@app.route("/", methods=['GET', 'POST'])
+@app.get("/test_scraping")
 def test_scraping():  # put application's code here
-    if request.method == 'POST':
-        return scrape_cnsa()
+    return scrape_filnemus()
 
 
 @app.route('/manual_update', methods=['POST'])
@@ -103,6 +102,7 @@ def edit_event(event_id):
                        orient="records")
 
             return event
+
 
 @app.delete('/events/<event_id>')
 def delete_event(event_id):
