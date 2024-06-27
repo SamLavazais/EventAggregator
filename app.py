@@ -1,5 +1,4 @@
 import datetime
-import json
 import logging
 
 import pandas as pd
@@ -78,7 +77,6 @@ def post_event():
     return new_record
 
 
-
 @app.get('/events/<event_id>')
 def get_one_event(event_id):
     # récupérer l'event concerné
@@ -89,25 +87,22 @@ def get_one_event(event_id):
             return event
 
 
-@app.put('/events/<event_id>')
+@app.patch('/events/<event_id>')
 def edit_event(event_id):
-    data = request.form
+    request_data = request.form
+
     events = read_from_json(app.root_path)
+
     for event in events:
         if event['id'] == int(event_id):
-            event['title'] = data['title']
-            event['date'] = data['date']
-            event['url'] = data['url']
-            event['source'] = data['source']
-            event['unread'] = data['unread']
+            for key in request_data.keys():
+                event[key] = request_data[key] if request_data[key] else False
             # sauvegarder les données
             df = pd.DataFrame(events, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
             df.to_json(path_or_buf=f"{app.root_path}/data.json",
                        orient="records")
 
             return event
-    return "coucou"
-
 
 @app.delete('/events/<event_id>')
 def delete_event(event_id):
