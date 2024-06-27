@@ -3,17 +3,24 @@ import dateparser
 
 
 def date_parser(date, source):
+    parsed_date = ""
     match source:
         case "user":
-            return dateparser_user(date)
+            parsed_date = dateparser_user(date)
         case "HAS":
-            return dateparser_has(date)
+            parsed_date = dateparser_has(date)
         case "FIRAH":
             pass
         case "CNSA":
-            return dateparser_cnsa(date)
+            parsed_date = dateparser_cnsa(date)
         case "Filnemus":
-            return dateparser_filnemus(date)
+            parsed_date = dateparser_filnemus(date)
+
+    return "{d}/{m}/{y}".format(
+        d=parsed_date.day,
+        m="0" + str(parsed_date.month) if len(str(parsed_date.month)) == 1 else parsed_date.month,
+        y=parsed_date.year
+    )
 
 
 def dateparser_user(date):

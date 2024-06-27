@@ -23,7 +23,7 @@ def scrape_has():
         event_url = "https://www.has-sante.fr/" + event.find("a")["href"]
         data.append({
             "title": title,
-            "date": "{d}/{m}/{y}".format(d=date.day, m=date.month, y=date.year),
+            "date": date,
             "url": event_url,
             "source": "HAS"
         })
@@ -72,7 +72,7 @@ def scrape_cnsa():
         event_url = "https://www.cnsa.fr" + event.find("h2").find("a")["href"]
         data.append({
             "title": title,
-            "date": "{d}/{m}/{y}".format(d=date.day, m=date.month, y=date.year),
+            "date": date,
             "url": event_url,
             "source": "CNSA"
         })
@@ -118,7 +118,7 @@ def scrape_filnemus():
             event_url = "https://www.filnemus.fr" + event.find("a")["href"]
             data.append({
                 "title": title,
-                "date": "{d}/{m}/{y}".format(d=date.day, m=date.month, y=date.year),
+                "date": date,
                 "url": event_url,
                 "source": "Filnemus"
             })
