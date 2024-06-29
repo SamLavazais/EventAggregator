@@ -96,7 +96,7 @@ def edit_event(event_id):
     for event in events:
         if event['id'] == int(event_id):
             for key in request_data.keys():
-                new_data = date_parser(request_data[key]) if key == "date" else request_data[key]
+                new_data = date_parser(request_data[key], "user") if key == "date" else request_data[key]
                 event[key] = new_data if request_data[key] else False
             # sauvegarder les données
             df = pd.DataFrame(events, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])

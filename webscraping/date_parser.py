@@ -16,7 +16,7 @@ def date_parser(date, source):
         case "Filnemus":
             parsed_date = dateparser_filnemus(date)
 
-    return "{d}/{m}/{y}".format(
+    return "{y}-{m}-{d}".format(
         d=parsed_date.day,
         m="0" + str(parsed_date.month) if len(str(parsed_date.month)) == 1 else parsed_date.month,
         y=parsed_date.year
