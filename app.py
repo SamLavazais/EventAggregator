@@ -7,7 +7,7 @@ from flask_apscheduler import APScheduler
 from flask_cors import CORS
 from webscraping.data_handling import read_from_json, save_to_json, scrape_data
 from webscraping.date_parser import date_parser
-from webscraping.scraping import scrape_filnemus
+from webscraping.scraping import scrape_drees
 from webscraping.timer import Timer
 
 app = Flask(__name__)
@@ -39,7 +39,7 @@ def update_database():
 
 @app.get("/test_scraping")
 def test_scraping():  # put application's code here
-    return scrape_filnemus()
+    return scrape_drees()
 
 
 @app.route('/manual_update', methods=['POST'])

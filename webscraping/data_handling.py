@@ -2,7 +2,7 @@ import pandas as pd
 import json
 import copy
 
-from webscraping.scraping import scrape_has, scrape_firah, scrape_cnsa, scrape_filnemus, scrape_hdh
+from webscraping.scraping import scrape_has, scrape_firah, scrape_cnsa, scrape_filnemus, scrape_hdh, scrape_drees
 from webscraping.timer import Timer
 
 
@@ -14,6 +14,7 @@ def scrape_data():
     data_scraped += scrape_cnsa()
     data_scraped += scrape_filnemus()
     data_scraped += scrape_hdh()
+    data_scraped += scrape_drees()
 
     # implémentation manuelle de l'id (pré-ORM)
     for i, record in enumerate(data_scraped, start=1):

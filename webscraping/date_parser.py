@@ -17,6 +17,8 @@ def date_parser(date, source):
             parsed_date = dateparser_filnemus(date)
         case "HDH":
             parsed_date = dateparser_hdh(date)
+        case "DREES":
+            parsed_date = dateparser_drees(date)
 
     return "{y}-{m}-{d}".format(
         d="0" + str(parsed_date.day) if len(str(parsed_date.day)) == 1 else parsed_date.day,
@@ -75,4 +77,9 @@ def dateparser_hdh(date):
     # parser la date avec le package de parsing
     parsed_date = dateparser.parse(date_to_parse, settings={'DATE_ORDER': 'DMY'})
 
+    return parsed_date
+
+
+def dateparser_drees(date):
+    parsed_date = dateparser.parse(date, settings={'DATE_ORDER': 'DMY'})
     return parsed_date
