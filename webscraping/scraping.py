@@ -125,11 +125,42 @@ def scrape_filnemus():
 
     return data
 
-# METHODE pour chaque website :
-# définir l'URL
-# récupérer la page
-# isoler le contenu de la page
-# identifier la section qui contient les events
-# obtenir la liste des events
-# (filtrer les events si nécessaire)
-# convertir les éléments obtenus en data
+
+# remplacer 1 par 0 pour aspirer les évent FUTURS (!= passés)
+def scrape_hdh():
+    url = "https://www.health-data-hub.fr/evenements"
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+    section = soup.find_all("div", class_="rich-text__bloc-contenus-lies")
+    events = section[1].find_all(
+        "div",
+        class_="contenu-lie__content"
+    )[0:10]
+
+    data = []
+    for event in events:
+        title = event.find("h3").get_text().strip()
+        date = date_parser(event.find("p").get_text().strip(), "HDH")
+        event_url = event.find("a")["href"]
+        data.append({
+            "title": title,
+            "date": date,
+            "url": event_url,
+            "source": "Health Data Hub"
+        })
+
+    return data
+
+
+def scrape_drees():
+    pass
+
+
+    # METHODE pour chaque website :
+    # définir l'URL
+    # récupérer la page
+    # isoler le contenu de la page
+    # identifier la section qui contient les events
+    # obtenir la liste des events
+    # (filtrer les events si nécessaire)
+    # convertir les éléments obtenus en data

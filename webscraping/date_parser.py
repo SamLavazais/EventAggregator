@@ -15,9 +15,11 @@ def date_parser(date, source):
             parsed_date = dateparser_cnsa(date)
         case "Filnemus":
             parsed_date = dateparser_filnemus(date)
+        case "HDH":
+            parsed_date = dateparser_hdh(date)
 
     return "{y}-{m}-{d}".format(
-        d=parsed_date.day,
+        d="0" + str(parsed_date.day) if len(str(parsed_date.day)) == 1 else parsed_date.day,
         m="0" + str(parsed_date.month) if len(str(parsed_date.month)) == 1 else parsed_date.month,
         y=parsed_date.year
     )
@@ -35,7 +37,6 @@ def dateparser_has(date):
     parsed_date = dateparser.parse(match, settings={'DATE_ORDER': 'DMY'})
 
     return parsed_date
-    # retourner la date sous un format FRONT ?
 
 
 # ATTENTION au regex "\n" : vérifier si ça fonctionne en conditions réelles !
@@ -63,6 +64,15 @@ def dateparser_filnemus(date):
     parsed_date = dateparser.parse(
         date_to_parse,
     )
+    return parsed_date
+
+
+def dateparser_hdh(date):
+    day = re.findall(r'\d{1,2}', date)[0]
+    month = re.findall(r'(\w{3,})\s\d{4}', date)[0]
+    year = re.findall(r'\d{4}', date)[0]
+    date_to_parse = "{0} {1} {2}".format(day, month, year)
+    # parser la date avec le package de parsing
+    parsed_date = dateparser.parse(date_to_parse, settings={'DATE_ORDER': 'DMY'})
 
     return parsed_date
-    # retourner la date sous un format FRONT ?
