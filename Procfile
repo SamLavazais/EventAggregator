@@ -1,1 +1,1 @@
-web: gunicorn --bind 5001 app:app
+web:gunicorn app:app

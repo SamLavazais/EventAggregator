@@ -1,0 +1,368 @@
+2024-06-29 13:37:20,833 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-06-29 13:37:20,835 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-06-29 13:37:20,850 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-06-29 13:37:20,850 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-06-29 13:39:37,810 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:39:37] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:40:01,734 INFO app Thread-3 (process_request_thread) : Database was updated in : 7.71 seconds.
+2024-06-29 13:40:01,735 INFO werkzeug Thread-3 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:01] "POST /manual_update HTTP/1.1" 200 -
+2024-06-29 13:40:04,815 INFO werkzeug Thread-4 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:04] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:40:06,309 INFO werkzeug Thread-6 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:06] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:40:33,596 INFO werkzeug Thread-8 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:33] "OPTIONS /events/32 HTTP/1.1" 200 -
+2024-06-29 13:40:33,868 INFO werkzeug Thread-9 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:33] "PATCH /events/32 HTTP/1.1" 200 -
+2024-06-29 13:40:33,907 INFO werkzeug Thread-10 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:33] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:40:43,802 INFO werkzeug Thread-12 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:40:43] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:41:04,297 INFO werkzeug Thread-14 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:04] "OPTIONS /events/10 HTTP/1.1" 200 -
+2024-06-29 13:41:04,553 INFO werkzeug Thread-15 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:04] "PATCH /events/10 HTTP/1.1" 200 -
+2024-06-29 13:41:04,607 INFO werkzeug Thread-16 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:04] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:41:14,081 INFO werkzeug Thread-18 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:14] "OPTIONS /events/10 HTTP/1.1" 200 -
+2024-06-29 13:41:14,345 INFO werkzeug Thread-19 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:14] "PATCH /events/10 HTTP/1.1" 200 -
+2024-06-29 13:41:14,440 INFO werkzeug Thread-20 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:14] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:41:21,481 INFO werkzeug Thread-22 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:21] "OPTIONS /events/10 HTTP/1.1" 200 -
+2024-06-29 13:41:21,737 INFO werkzeug Thread-23 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:21] "DELETE /events/10 HTTP/1.1" 200 -
+2024-06-29 13:41:21,796 INFO werkzeug Thread-24 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:41:21] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:42:18,792 INFO werkzeug Thread-26 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:42:18] "OPTIONS /events/9 HTTP/1.1" 200 -
+2024-06-29 13:42:19,055 INFO werkzeug Thread-27 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:42:19] "PATCH /events/9 HTTP/1.1" 200 -
+2024-06-29 13:42:19,103 INFO werkzeug Thread-28 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:42:19] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:42:30,664 INFO werkzeug Thread-30 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:42:30] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:42:54,920 INFO werkzeug Thread-32 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:42:54] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:43:04,505 INFO werkzeug Thread-33 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:43:04] "OPTIONS /events/9 HTTP/1.1" 200 -
+2024-06-29 13:43:04,831 INFO werkzeug Thread-34 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:43:04] "PATCH /events/9 HTTP/1.1" 200 -
+2024-06-29 13:43:05,084 INFO werkzeug Thread-35 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:43:05] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:45:42,819 INFO werkzeug Thread-37 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:45:42] "GET /events HTTP/1.1" 200 -
+2024-06-29 13:45:48,115 INFO werkzeug Thread-38 (process_request_thread) : 127.0.0.1 - - [29/Jun/2024 13:45:48] "GET /events HTTP/1.1" 200 -
+2024-06-29 16:39:23,806 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-06-29 16:39:23,809 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:40:15,395 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:40:15,398 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:40:15,411 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-07-10 10:40:15,411 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:40:20,648 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:40:20] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 10:41:01,070 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:41:01,071 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:41:01,084 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5001
+2024-07-10 10:41:01,084 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:41:04,864 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:41:04] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 10:44:44,825 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:44:44,827 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:44:44,839 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:44:44,839 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:44:47,819 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("time", class_="dt-start").get_text().strip(), "HDH")
+AttributeError: 'NoneType' object has no attribute 'get_text'
+2024-07-10 10:44:47,823 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:44:47] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:45:49,159 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:45:49,163 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:45:49,176 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:45:49,176 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:45:53,883 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("p").get_text().strip(), "CNSA")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 15, in date_parser
+    parsed_date = dateparser_cnsa(date)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 47, in dateparser_cnsa
+    [day, month] = re.findall(pattern, date)[0]
+IndexError: list index out of range
+2024-07-10 10:45:53,885 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:45:53] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:46:08,867 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:46:08,868 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:46:08,879 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:46:08,879 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:46:12,294 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("p").get_text().strip(), "HDH")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 22, in date_parser
+    d=parsed_date.day,
+AttributeError: 'NoneType' object has no attribute 'day'
+2024-07-10 10:46:12,296 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:46:12] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:46:13,876 ERROR app Thread-2 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("p").get_text().strip(), "HDH")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 22, in date_parser
+    d=parsed_date.day,
+AttributeError: 'NoneType' object has no attribute 'day'
+2024-07-10 10:46:13,876 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:46:13] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:46:45,538 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:46:45,540 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:46:45,550 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:46:45,550 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:47:09,402 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("p").get_text().strip(), "HDH")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 22, in date_parser
+    d=parsed_date.day,
+AttributeError: 'NoneType' object has no attribute 'day'
+2024-07-10 10:47:09,404 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:47:09] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:48:59,935 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:48:59,936 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:48:59,946 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:48:59,946 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:49:04,429 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:49:04] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 10:49:29,046 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:49:29,047 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:49:29,058 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:49:29,058 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:49:31,307 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:49:31] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 10:49:42,773 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:49:42,775 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:49:42,785 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:49:42,785 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:49:46,371 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("p").get_text().strip(), "HDH")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 22, in date_parser
+    d=parsed_date.day,
+AttributeError: 'NoneType' object has no attribute 'day'
+2024-07-10 10:49:46,373 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:49:46] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:54:41,352 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:54:41,354 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:54:41,366 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:54:41,366 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:54:48,624 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_hdh()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 143, in scrape_hdh
+    date = date_parser(event.find("p").get_text().strip(), "HDH")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 19, in date_parser
+    parsed_date = dateparser_hdh(date)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 71, in dateparser_hdh
+    month = re.findall(r'(\w{3,})\s\d{4}]', date)[0]
+IndexError: list index out of range
+2024-07-10 10:54:48,627 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:54:48] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 10:57:11,252 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 10:57:11,253 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 10:57:11,263 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 10:57:11,263 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 10:57:12,795 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 10:57:12] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 11:02:06,370 INFO werkzeug Thread-2 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:02:06] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 11:03:58,954 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:03:58,956 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:03:58,969 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:03:58,969 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:04:04,108 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:04:04] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 11:04:56,032 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:04:56,034 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:04:56,044 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:04:56,044 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:05:01,374 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:05:01] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 11:43:45,872 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:43:45,891 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:43:45,920 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:43:45,921 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:43:49,899 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_drees()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 168, in scrape_drees
+    date = date_parser(event.find("time").get_text().strip(), "drees")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 23, in date_parser
+    d="0" + str(parsed_date.day) if len(str(parsed_date.day)) == 1 else parsed_date.day,
+UnboundLocalError: local variable 'parsed_date' referenced before assignment
+2024-07-10 11:43:49,903 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:43:49] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 11:44:24,105 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:44:24,106 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:44:24,118 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:44:24,118 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:48:41,799 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:48:41,801 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:48:41,811 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:48:41,811 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:48:42,877 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_drees()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 168, in scrape_drees
+    date = date_parser(event.find("time").get_text().strip(), "drees")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 24, in date_parser
+    d="0" + str(parsed_date.day) if len(str(parsed_date.day)) == 1 else parsed_date.day,
+AttributeError: 'str' object has no attribute 'day'
+2024-07-10 11:48:42,880 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:48:42] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 11:49:26,169 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:49:26,171 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:49:26,182 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:49:26,182 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:49:27,159 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_drees()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 168, in scrape_drees
+    date = date_parser(event.find("time").get_text().strip(), "drees")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 24, in date_parser
+    d="0" + str(parsed_date.day) if len(str(parsed_date.day)) == 1 else parsed_date.day,
+AttributeError: 'str' object has no attribute 'day'
+2024-07-10 11:49:27,161 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:49:27] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 11:50:23,092 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:50:23,093 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:50:23,105 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:50:23,105 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:50:29,445 ERROR app Thread-1 (process_request_thread) : Exception on /test_scraping [GET]
+Traceback (most recent call last):
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 1473, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 882, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask_cors\extension.py", line 178, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 880, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\.venv\lib\site-packages\flask\app.py", line 865, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\samue\PycharmProjects\EventAggregator\app.py", line 42, in test_scraping
+    return scrape_drees()
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\scraping.py", line 168, in scrape_drees
+    date = date_parser(event.find("time").get_text().strip(), "drees")
+  File "C:\Users\samue\PycharmProjects\EventAggregator\webscraping\date_parser.py", line 24, in date_parser
+    d="0" + str(parsed_date.day) if len(str(parsed_date.day)) == 1 else parsed_date.day,
+AttributeError: 'str' object has no attribute 'day'
+2024-07-10 11:50:29,448 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:50:29] "[35m[1mGET /test_scraping HTTP/1.1[0m" 500 -
+2024-07-10 11:50:53,112 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:50:53,114 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:50:53,126 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:50:53,126 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:50:54,008 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:50:54] "GET /test_scraping HTTP/1.1" 200 -
+2024-07-10 11:52:50,966 INFO apscheduler.scheduler MainThread : Scheduler started
+2024-07-10 11:52:50,967 INFO apscheduler.scheduler MainThread : Added job "update_database" to job store "default"
+2024-07-10 11:52:50,987 INFO werkzeug MainThread : [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://localhost:5001
+2024-07-10 11:52:50,987 INFO werkzeug MainThread : [33mPress CTRL+C to quit[0m
+2024-07-10 11:52:59,463 INFO app Thread-1 (process_request_thread) : Database was updated in : 5.67 seconds.
+2024-07-10 11:52:59,463 INFO werkzeug Thread-1 (process_request_thread) : 127.0.0.1 - - [10/Jul/2024 11:52:59] "POST /manual_update HTTP/1.1" 200 -
