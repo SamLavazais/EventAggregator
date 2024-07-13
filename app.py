@@ -68,9 +68,9 @@ def post_event():
         'unread': True,
         'deleted_at': None
     }
-    current_data = read_from_json(app.root_path)
-    new_record["id"] = current_data[-1]["id"] + 1
-    new_data = current_data.append(new_record)
+    new_data = read_from_json(app.root_path)
+    new_record["id"] = new_data[-1]["id"] + 1
+    new_data.append(new_record)
     df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
     df.to_json(path_or_buf=f"{app.root_path}/data.json",
                orient="records")
