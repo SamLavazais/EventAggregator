@@ -57,7 +57,7 @@ def save_to_json(data_to_store, app_root_path):
 
 
 def read_from_json(app_root_path):
-    f = open(f"{app_root_path}\\data.json")
+    f = open(f"{app_root_path}/data.json")
     data_read = json.load(f)
     f.close()
     return data_read
