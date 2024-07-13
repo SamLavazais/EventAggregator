@@ -1,7 +1,7 @@
 # import datetime
 # import logging
 #
-# import pandas as pd
+import pandas as pd
 from flask import Flask, request
 from flask_apscheduler import APScheduler
 # from flask_cors import CORS
@@ -67,23 +67,22 @@ def get_all_events():  # put application's code here
 
 @app.post('/events')
 def post_event():
-    return "new event created"
-    # data = request.form
-    # new_record = {
-    #     'title': data['title'],
-    #     'date': data['date'],
-    #     'url': data['url'],
-    #     'source': data['source'],
-    #     'unread': True,
-    #     'deleted_at': None
-    # }
-    # current_data = read_from_json(app.root_path)
-    # new_record["id"] = current_data[-1]["id"] + 1
-    # new_data = current_data.append(new_record)
-    # df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
-    # df.to_json(path_or_buf=f"{app.root_path}/data.json",
-    #            orient="records")
-    # return new_record
+    data = request.form
+    new_record = {
+        'title': data['title'],
+        'date': data['date'],
+        'url': data['url'],
+        'source': data['source'],
+        'unread': True,
+        'deleted_at': None
+    }
+    current_data = read_from_json(app.root_path)
+    new_record["id"] = current_data[-1]["id"] + 1
+    new_data = current_data.append(new_record)
+    df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
+    df.to_json(path_or_buf=f"{app.root_path}/data.json",
+               orient="records")
+    return new_record
 
 
 @app.get('/events/<event_id>')
