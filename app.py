@@ -76,7 +76,6 @@ def post_event():
         'unread': True,
         'deleted_at': None
     }
-    save_to_json()
     current_data = read_from_json(app.root_path)
     new_record["id"] = current_data[-1]["id"] + 1
     current_data.append(new_record)
