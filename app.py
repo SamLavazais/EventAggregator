@@ -5,7 +5,7 @@
 from flask import Flask, request
 # from flask_apscheduler import APScheduler
 # from flask_cors import CORS
-# from webscraping.data_handling import read_from_json, save_to_json, scrape_data
+from webscraping.data_handling import read_from_json, save_to_json, scrape_data
 # from webscraping.date_parser import date_parser
 from webscraping.scraping import scrape_drees
 # from webscraping.timer import Timer
@@ -58,12 +58,11 @@ def update():  # put application's code here
 
 @app.get('/events')
 def get_all_events():  # put application's code here
-    return 'List all events'
-    # data = read_from_json(app.root_path)
-    # if request.args.get("deleted", default=False):
-    #     return [record for record in data if record['deleted_at'] is not None]
-    # else:
-    #     return [record for record in data if record['deleted_at'] is None]
+    data = read_from_json(app.root_path)
+    if request.args.get("deleted", default=False):
+        return [record for record in data if record['deleted_at'] is not None]
+    else:
+        return [record for record in data if record['deleted_at'] is None]
 
 
 @app.post('/events')
