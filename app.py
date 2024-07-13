@@ -79,8 +79,8 @@ def post_event():
     save_to_json()
     current_data = read_from_json(app.root_path)
     new_record["id"] = current_data[-1]["id"] + 1
-    new_data = current_data.append(new_record)
-    return new_data
+    current_data.append(new_record)
+    return current_data
     # df = pd.DataFrame(new_data, columns=['id', 'title', 'date', 'url', 'source', 'unread', 'deleted_at'])
     # df.to_json(path_or_buf=f"{app.root_path}/data.json",
     #            orient="records")
