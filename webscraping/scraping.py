@@ -153,28 +153,30 @@ def scrape_hdh():
 
 
 def scrape_drees():
-    url = "https://drees.solidarites-sante.gouv.fr/recherche"
-    page = requests.get(url)
-    soup = BeautifulSoup(page.content, "html.parser")
-    section = soup.find("ul", class_="search-result")
-    events = section.find_all(
-        "li",
-        class_="search-result-item"
-    )
+    return "blue"
 
-    data = []
-    for event in events:
-        title = event.find("h3", class_="search-result-item--title").get_text().strip() + " (" + event.find("ul", class_="search-result-item--collection").find_all("li")[0].get_text().strip() + ")"
-        date = date_parser(event.find("time").get_text().strip(), "DREES")
-        event_url = "https://drees.solidarites-sante.gouv.fr" + event.find("h3", class_="search-result-item--title").find("a")["href"]
-        data.append({
-            "title": title,
-            "date": date,
-            "url": event_url,
-            "source": "DREES"
-        })
-
-    return data
+    # url = "https://drees.solidarites-sante.gouv.fr/recherche"
+    # page = requests.get(url)
+    # soup = BeautifulSoup(page.content, "html.parser")
+    # section = soup.find("ul", class_="search-result")
+    # events = section.find_all(
+    #     "li",
+    #     class_="search-result-item"
+    # )
+    #
+    # data = []
+    # for event in events:
+    #     title = event.find("h3", class_="search-result-item--title").get_text().strip() + " (" + event.find("ul", class_="search-result-item--collection").find_all("li")[0].get_text().strip() + ")"
+    #     date = date_parser(event.find("time").get_text().strip(), "DREES")
+    #     event_url = "https://drees.solidarites-sante.gouv.fr" + event.find("h3", class_="search-result-item--title").find("a")["href"]
+    #     data.append({
+    #         "title": title,
+    #         "date": date,
+    #         "url": event_url,
+    #         "source": "DREES"
+    #     })
+    #
+    # return data
 
     # METHODE pour chaque website :
     # définir l'URL
