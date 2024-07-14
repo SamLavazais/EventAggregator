@@ -18,56 +18,11 @@
     "deleted_at": null
   },
   {
-    "id": 3,
-    "title": "Regarder le replay - Diab\u00e8te de type 2 de l\u2019adulte : quelles strat\u00e9gies th\u00e9rapeutiques\u202f ?",
-    "date": "2024-06-27",
-    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3520038\/fr\/regarder-le-replay-diabete-de-type-2-de-l-adulte-quelles-strategies-therapeutiques",
-    "source": "HAS",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 4,
-    "title": "La HAS au colloque international organis\u00e9 par l'AIS : \u00ab Next generation of clinical research \u2013 AI, in silico and external arm: time to make it real \u00bb - 24 juin ...",
-    "date": "2024-06-24",
-    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3520775\/fr\/la-has-au-colloque-international-organise-par-l-ais-next-generation-of-clinical-research-ai-in-silico-and-external-arm-time-to-make-it-real-24-juin-2024",
-    "source": "HAS",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 5,
-    "title": "La HAS sera pr\u00e9sente \u00e0 la journ\u00e9e annuelle de l\u2019exp\u00e9rience patient - mardi 18 juin 2024",
-    "date": "2024-06-18",
-    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3517451\/fr\/la-has-sera-presente-a-la-journee-annuelle-de-l-experience-patient-mardi-18-juin-2024",
-    "source": "HAS",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
     "id": 6,
     "title": "La HAS \u00e0 la journ\u00e9e annuelle de l'ANRQ-PSY - 14 juin 2024",
     "date": "2024-06-14",
     "url": "https:\/\/www.has-sante.fr\/jcms\/p_3522113\/fr\/la-has-a-la-journee-annuelle-de-l-anrq-psy-14-juin-2024",
     "source": "HAS",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 7,
-    "title": "Enqu\u00eate sur votre connaissance de \u00ab PACTE Soins Primaires \u00bb (PACTE SP)",
-    "date": "2024-06-13",
-    "url": "https:\/\/www.has-sante.fr\/jcms\/p_3522096\/fr\/enquete-sur-votre-connaissance-de-pacte-soins-primaires-pacte-sp",
-    "source": "HAS",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 8,
-    "title": "Appel \u00e0 participation dans le cadre d'une recherche",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/925\/appel-a-participation-dans-le-cadre-d-une-recherche.html",
-    "source": "FIRAH",
     "unread": true,
     "deleted_at": null
   },
@@ -90,78 +45,6 @@
     "deleted_at": "2024-06-29T13:41:21.733736"
   },
   {
-    "id": 11,
-    "title": "Sant\u00e9 mentale au travail : l'impact (in)visible",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/922\/sante-mentale-au-travail-l-impact-in-visible.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 12,
-    "title": "R\u00e9sultats de l'enqu\u00eate Sport et Handicap",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/921\/resultats-de-l-enquete-sport-et-handicap.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 13,
-    "title": "Colloque national DYS 2024",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/920\/colloque-national-dys-2024.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 14,
-    "title": "Bulletin d'information Mars 2024",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/919\/bulletin-d-information-mars-2024.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 15,
-    "title": "Recherche et handicap : des cl\u00e9s pour agir",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/918\/recherche-et-handicap-des-cles-pour-agir.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 16,
-    "title": "Engagement politique et handicap : questionnaire",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/917\/engagement-politique-et-handicap-questionnaire.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 17,
-    "title": "Appel \u00e0 projets intrapreunariat de l'Accel\u00e9rateur 21",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/916\/appel-a-projets-intrapreunariat-de-l-accelerateur-21.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 18,
-    "title": "Webinaire SAD \"3 questions \u00e0\u2026\"\u202f: pour tout savoir sur les rapprochements dans le cadre de la r\u00e9forme",
-    "date": "2024-07-9",
-    "url": "https:\/\/www.cnsa.fr\/agenda\/webinaire-sad-3-questions-pour-tout-savoir-sur-les-rapprochements-dans-le-cadre-de-la",
-    "source": "CNSA",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
     "id": 19,
     "title": "Universit\u00e9s de la coordination en sant\u00e9",
     "date": "2024-08-28",
@@ -175,24 +58,6 @@
     "title": "Les assises nationales des EHPAD",
     "date": "2024-09-10",
     "url": "https:\/\/www.cnsa.fr\/agenda\/les-assises-nationales-des-ehpad",
-    "source": "CNSA",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 21,
-    "title": "EHPAD et ESMS, faites des \u00e9conomies sur vos travaux",
-    "date": "2024-09-19",
-    "url": "https:\/\/www.cnsa.fr\/agenda\/ehpad-et-esms-faites-des-economies-sur-vos-travaux",
-    "source": "CNSA",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 22,
-    "title": "Exp\u00e9rimenter au service de la participation des personnes : R\u00e9alisations, enseignements et perspectives",
-    "date": "2024-10-1",
-    "url": "https:\/\/www.cnsa.fr\/agenda\/experimenter-au-service-de-la-participation-des-personnes-realisations-enseignements-et",
     "source": "CNSA",
     "unread": true,
     "deleted_at": null
@@ -216,100 +81,10 @@
     "deleted_at": null
   },
   {
-    "id": 25,
-    "title": "DIN'DAY",
-    "date": "2024-06-11",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/dinday",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 26,
-    "title": "Webinaire Registre ERN EURO-NMD",
-    "date": "2024-06-12",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/webinaire-registre-ern-euro-nmd",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 27,
-    "title": "3\u00e8me Congr\u00e8s Francophone Multidisciplinaire de l'Amylose",
-    "date": "2024-06-13",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/3eme-congres-francophone-multidisciplinaire-de-lamylose",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 28,
-    "title": "Webinaire CMT France",
-    "date": "2024-06-15",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/webinaire-cmt-france",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 29,
-    "title": "Fondation Maladies Rares : Colloque Scientifique 2024",
-    "date": "2024-06-18",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/fondation-maladies-rares-colloque-scientifique-2024",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
     "id": 30,
     "title": "Journ\u00e9e collaborative autour de l'extension du d\u00e9pistage n\u00e9onatal",
     "date": "2024-06-25",
     "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/journee-collaborative-autour-de-lextension-du-depistage-neonatal",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 31,
-    "title": "Conf\u00e9rence Th\u00e9rapies Innovantes et Combinatoires",
-    "date": "2024-07-2",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/conference-therapies-innovantes-et-combinatoires",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 32,
-    "title": "1st International AL Amyloidosis Meeting",
-    "date": "2024-07-5",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/1st-international-al-amyloidosis-meeting",
-    "source": "Filnemus",
-    "unread": false,
-    "deleted_at": null
-  },
-  {
-    "id": 33,
-    "title": "R\u00e9union GT Calpa\u00efnopathies",
-    "date": "2024-07-8",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/reunion-gt-calpainopathies",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 34,
-    "title": "15\u00e8me Journ\u00e9e Interdisciplinaire du Muscle Inflammatoire",
-    "date": "2024-09-5",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/15eme-journee-interdisciplinaire-du-muscle-inflammatoire-les-5-et-6-septembre-2024-1",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 35,
-    "title": "Summer school on Multidisciplinary management of neuromuscular diseases",
-    "date": "2024-09-12",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/summer-school-multridisciplinary-management-of-neuromuscular-diseases-1",
     "source": "Filnemus",
     "unread": true,
     "deleted_at": null
@@ -333,73 +108,10 @@
     "deleted_at": null
   },
   {
-    "id": 38,
-    "title": "ICNMD 2024",
-    "date": "2024-10-25",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/icnmd-2024",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 39,
-    "title": "Journ\u00e9e fran\u00e7aise de la maladie de Pompe",
-    "date": "2024-11-7",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/journee-francaise-de-la-maladie-de-pompe",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 40,
-    "title": "Symposium Institut Cochin \u201cMuscle, Exercise and Health\"",
-    "date": "2024-11-14",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/symposium-institut-cochin-muscle-exercise-and-health",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 41,
-    "title": "23e r\u00e9union annuelle du r\u00e9seau Dystrophies musculaires d'Emery-Dreifuss [...]",
-    "date": "2024-11-15",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/23e-reunion-annuelle-du-reseau-dystrophies-musculaires-demery-dreifuss",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 42,
-    "title": "JSFM 2024",
-    "date": "2024-11-20",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/jsfm-2024",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
     "id": 43,
     "title": "Save the date _ Journ\u00e9e Transition \u00e0 Lille",
     "date": "2024-11-23",
     "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/journee-transition-a-lille",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 44,
-    "title": "R\u00e9union du r\u00e9seau DM-Scope",
-    "date": "2024-11-29",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/reunion-du-reseau-dm-scope",
-    "source": "Filnemus",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 45,
-    "title": "Journ\u00e9e annuelle RESOCANAUX",
-    "date": "2024-12-6",
-    "url": "https:\/\/www.filnemus.fr\/les-evenements-filnemus\/agenda\/evenement\/reunion-annuelle-resocanaux",
     "source": "Filnemus",
     "unread": true,
     "deleted_at": null
@@ -432,37 +144,10 @@
     "deleted_at": null
   },
   {
-    "id": 49,
-    "title": "Handicap et parcours professionnels : comment assurer une vraie \u00e9galit\u00e9 des chances ?",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/929\/handicap-et-parcours-professionnels-comment-assurer-une-vraie-egalite-des-chances.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 50,
-    "title": "Enqu\u00eate flash sur la sant\u00e9 au travail dans l\u2019ESS",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/928\/enquete-flash-sur-la-sante-au-travail-dans-l-ess.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
     "id": 51,
     "title": "Sante mentale - Grande cause nationale 2025",
     "date": null,
     "url": "https:\/\/www.firah.org\/article\/927\/sante-mentale-grande-cause-nationale-2025.html",
-    "source": "FIRAH",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 52,
-    "title": "Bulletin d'information Juin 2024",
-    "date": null,
-    "url": "https:\/\/www.firah.org\/article\/926\/bulletin-d-information-juin-2024.html",
     "source": "FIRAH",
     "unread": true,
     "deleted_at": null
@@ -504,69 +189,6 @@
     "deleted_at": null
   },
   {
-    "id": 57,
-    "title": "D\u00e9bat Lyc\u00e9en - IA et donn\u00e9es de san\u2026",
-    "date": "2024-05-22",
-    "url": "https:\/\/www.health-data-hub.fr\/page\/debat-lyceen-ia-et-donnees-de-sante-pour-la-recherche",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 58,
-    "title": "Journ\u00e9e de l'open science en s\u2026",
-    "date": "2024-04-30",
-    "url": "https:\/\/www.health-data-hub.fr\/page\/journee-de-lopen-science-en-sante",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 59,
-    "title": "Colloque \u201cUtilisation des donn\u00e9es d\u2026",
-    "date": "2024-02-29",
-    "url": "\/colloque-utilisation-donnees-sante",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 60,
-    "title": "R\u00e9sultats du Data Challenge D-IA-GN\u2026",
-    "date": "2023-12-14",
-    "url": "https:\/\/www.health-data-hub.fr\/evenement-resultats-diagnodent",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 61,
-    "title": "IA et machine learning en Allergolo\u2026",
-    "date": "2023-11-17",
-    "url": "\/evenement-ia-machine-learning-allergologie",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 62,
-    "title": "S\u00e9minaire cl\u00f4ture concertation cito\u2026",
-    "date": "2023-07-11",
-    "url": "\/seminaire-cloture-concertation",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 63,
-    "title": "Summer School AI4Health 2023",
-    "date": "2023-07-03",
-    "url": "\/ai4health-2023",
-    "source": "Health Data Hub",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
     "id": 64,
     "title": "La compl\u00e9mentaire sant\u00e9 : acteurs, b\u00e9n\u00e9ficiaires, garanties - \u00c9dition 2024 (Publications)",
     "date": "2024-07-10",
@@ -589,69 +211,6 @@
     "title": "Pr\u00e8s de la moiti\u00e9 des agr\u00e9ments des assistantes familiales les autorisent \u00e0 accueillir trois enfants (Publications)",
     "date": "2024-07-09",
     "url": "https:\/\/drees.solidarites-sante.gouv.fr\/publications-communique-de-presse\/etudes-et-resultats\/240709ER1304_AssistantesFamiliales",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 67,
-    "title": "M\u00e9thodologie de l\u2019enqu\u00eate aupr\u00e8s des \u00e9tablissements et services en faveur des adultes et familles en difficult\u00e9 sociale (ES-DS) 2020-2021 (Publications)",
-    "date": "2024-07-04",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/publications\/drees-methodes\/240704_DM_MethodologieESDS",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 68,
-    "title": "Sant\u00e9, social et m\u00e9dico-social : des professions au coeur de l\u2019attention (Actualit\u00e9s)",
-    "date": "2024-07-03",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/actualites-evenements\/sante-social-et-medico-social-des-professions-au-coeur-de-lattention",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 69,
-    "title": "Une mesure extr\u00eamement fine de la r\u00e9alit\u00e9 sociale gr\u00e2ce \u00e0 la statistique publique (Actualit\u00e9s)",
-    "date": "2024-06-28",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/actualites-evenements\/une-mesure-extremement-fine-de-la-realite-sociale-grace-la-statistique",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 70,
-    "title": "L\u2019estimation des revenus dans l\u2019enqu\u00eate aupr\u00e8s des b\u00e9n\u00e9ficiaires de minima sociaux (BMS) 2018 - Imputations post-appariements fiscaux et sociaux (Publications)",
-    "date": "2024-06-27",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/publications\/drees-methodes\/240627-DM16_BMS",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 71,
-    "title": "Rapport d\u2019activit\u00e9 2023 (Publications)",
-    "date": "2024-06-25",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/publications-actualites-evenements\/rapports\/rapport-dactivite-2023",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 72,
-    "title": "Le projet Habitats Interm\u00e9diaires \u2013 Logements \u2013 Autonomie \u2013 Seniors (HILAUSENIORS) (Sources, outils et enqu\u00eates)",
-    "date": "2024-06-24",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/sources-outils-et-enquetes\/HILAUSENIORS",
-    "source": "DREES",
-    "unread": true,
-    "deleted_at": null
-  },
-  {
-    "id": 73,
-    "title": "D\u00e9mographie des infirmi\u00e8res et  des aides-soignantes (Publications)",
-    "date": "2024-06-19",
-    "url": "https:\/\/drees.solidarites-sante.gouv.fr\/250619_DM14_DemographieInfirmieresAidesSoignantes",
     "source": "DREES",
     "unread": true,
     "deleted_at": null
